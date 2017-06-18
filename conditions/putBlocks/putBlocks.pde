@@ -7,6 +7,9 @@ void draw() {
   // нарисовать уровень
   drawLevel();
 
+  // нарисовать подсказки
+  drawTips();
+
   pushMatrix();
   translate(0, 50);
   // нарисовать блок #1

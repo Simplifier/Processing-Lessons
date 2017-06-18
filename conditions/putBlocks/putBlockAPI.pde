@@ -62,9 +62,31 @@ void drawLevel() {
       }
     }
   }
+  
+  fill(100);
+  // gate #2
+  pushMatrix();
+  translate(175, 125);
+  rotate(radians(45));
+  translate(25, -10);
+  rect(0, 0, 50, 20);
+  popMatrix();
+  pushMatrix();
+  translate(175, 125);
+  rotate(radians(45));
+  translate(-75, -10);
+  rect(0, 0, 50, 20);
+  popMatrix();
 
-  drawTips();
+  // gate #4
+  pushMatrix();
+  translate(250, 300);
+  rotate(radians(-45));
+  translate(50, 0);
+  rect(0, 0, 50, 20);
+  popMatrix();
 
+  fill(255);
   pushMatrix();
   scale(0.75);
   image(babyWinston, 150, 250);
